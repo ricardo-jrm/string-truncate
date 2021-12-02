@@ -6,13 +6,13 @@
 export const stringTruncate = (
   str: string,
   length: number,
-  lastWord?: boolean,
+  keepLastWord?: boolean,
 ) => {
   if (!str || str?.length < length) return str;
 
   const ellipsis = '...';
 
-  if (lastWord) {
+  if (keepLastWord) {
     const words = str.split(' ');
     const target = ` ${words[words.length - 1]}`;
     const truncated = str.substring(
