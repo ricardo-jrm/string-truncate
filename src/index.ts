@@ -1,6 +1,5 @@
 /**
  * Truncates string to fit within given length with appended ellipsis. Option to keep last word.
- *
  */
 
 export const stringTruncate = (
@@ -12,16 +11,13 @@ export const stringTruncate = (
 
   const ellipsis = '...';
 
-  if (keepLastWord) {
-    const words = str.split(' ');
-    const target = ` ${words[words.length - 1]}`;
-    const truncated = str.substring(
-      0,
-      length - ellipsis.length - target.length,
-    );
-    return `${truncated}${ellipsis}${target}`;
+  if (!keepLastWord) {
+    const truncated = str.substring(0, length - ellipsis.length);
+    return `${truncated}${ellipsis}`;
   }
 
-  const truncated = str.substring(0, length - ellipsis.length);
-  return `${truncated}${ellipsis}`;
+  const words = str.split(' ');
+  const target = ` ${words[words.length - 1]}`;
+  const truncated = str.substring(0, length - ellipsis.length - target.length);
+  return `${truncated}${ellipsis}${target}`;
 };
