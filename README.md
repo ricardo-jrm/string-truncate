@@ -41,7 +41,7 @@ import { stringTruncate } from '@ricardo-jrm/string-truncate'
 stringTruncate('Lorem ipsum dolor sit amet', 20);
 -> "Lorem ipsum dolor..."
 
-stringTruncate('Lorem ipsum dolor sit amet', 20, lastWord);
+stringTruncate('Lorem ipsum dolor sit amet', 20, true);
 -> "Lorem ipsum ... amet"
 ```
 
