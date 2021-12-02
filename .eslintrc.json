@@ -12,13 +12,7 @@
       }
     }
   },
-  "extends": [
-    "prettier",
-    "plugin:react/recommended",
-    "plugin:react-hooks/recommended",
-    "airbnb",
-    "plugin:@typescript-eslint/recommended"
-  ],
+  "extends": ["prettier", "plugin:@typescript-eslint/recommended"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -31,7 +25,7 @@
     "ecmaVersion": 11,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "plugins": ["@typescript-eslint"],
   "rules": {
     "import/prefer-default-export": 0,
     "import/extensions": 0,
