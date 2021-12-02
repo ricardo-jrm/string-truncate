@@ -1,0 +1,70 @@
+{
+  "name": "@ricardo-jrm/string-truncate",
+  "description": "Truncate strings",
+  "version": "0.0.0-development",
+  "main": "dist/index.min.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ricardo-jrm/string-truncate.git"
+  },
+  "author": {
+    "name": "Ricardo Mota",
+    "url": "https://github.com/ricardo-jrm"
+  },
+  "homepage": "https://github.com/ricardo-jrm/string-truncate#readme",
+  "bugs": {
+    "url": "https://github.com/ricardo-jrm/string-truncate/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "typescript",
+    "npm"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "bundle": "gulp",
+    "lint": "eslint .",
+    "lint:fix": "eslint --fix .",
+    "test": "jest",
+    "prepare": "husky install",
+    "semantic-release": "semantic-release --branches main"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.[t|j]sx?$": "babel-jest"
+    }
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "@types/jest": "^27.0.2",
+    "@types/node": "^16.11.4",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "babel-jest": "^27.4.2",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.26.1",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0",
+    "husky": "^7.0.0",
+    "jest": "^27.3.1",
+    "lint-staged": "^12.1.2",
+    "prettier": "^2.4.1",
+    "semantic-release": "^18.0.1",
+    "typescript": "^4.4.4"
+  }
+}

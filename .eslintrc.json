@@ -1,0 +1,53 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest": true,
+    "node": true
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    }
+  },
+  "extends": [
+    "prettier",
+    "plugin:react/recommended",
+    "plugin:react-hooks/recommended",
+    "airbnb",
+    "plugin:@typescript-eslint/recommended"
+  ],
+  "globals": {
+    "Atomics": "readonly",
+    "SharedArrayBuffer": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 11,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "react-hooks", "@typescript-eslint"],
+  "rules": {
+    "import/prefer-default-export": 0,
+    "import/extensions": 0,
+    "no-unused-vars": "off",
+    "indent": "off",
+    "semi": "off",
+    "implicit-arrow-linebreak": "off",
+    "arrow-body-style": "warn",
+    "no-multiple-empty-lines": "off",
+    "no-trailing-spaces": "off",
+    "object-curly-spacing": "off",
+    "eol-last": "off",
+    "quotes": "off",
+    "padded-blocks": "off",
+    "no-empty": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-empty-function": "warn"
+  }
+}
