@@ -21,11 +21,23 @@
 
 <br />
 
+### <b>Install</b>
+
+```ts
+npm install @ricardo-jrm/string-truncate
+
+yarn add @ricardo-jrm/string-truncate
+```
+
+<br />
+
 ### <b>Usage</b>
 
 Truncates string to fit within given length with appended ellipsis. Option to keep last word.
 
 ```ts
+import { stringTruncate } from '@ricardo-jrm/string-truncate'
+
 stringTruncate('Lorem ipsum dolor sit amet', 20);
 -> "Lorem ipsum dolor..."
 
