@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import { stringTruncate } from './index';
 
 describe('truncate strings', () => {
