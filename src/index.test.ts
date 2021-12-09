@@ -1,4 +1,4 @@
-import { stringTruncate } from './index';
+import { stringTruncate } from '.';
 
 describe('truncate strings', () => {
   const lorem = 'Lorem ipsum dolor sit amet';
