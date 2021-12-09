@@ -3,7 +3,7 @@
   "description": "Truncate strings",
   "version": "0.0.3-development",
   "main": "dist/index.min.js",
-  "types": "out/index.d.ts",
+  "types": "dist/index.d.ts",
   "private": false,
   "repository": {
     "type": "git",

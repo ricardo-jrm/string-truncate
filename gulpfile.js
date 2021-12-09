@@ -11,7 +11,7 @@ const concat = require('gulp-concat');
 const { task, src, dest } = gulp;
 
 task('default', () =>
-  src('out/index.js', { read: false })
+  src('dist/index.js', { read: false })
     .pipe(
       tap(function (file) {
         log.info('bundling ' + file.path);
