@@ -1,7 +1,7 @@
-import gulp from 'gulp';
-import sourcemaps from 'gulp-sourcemaps';
-import terser from 'gulp-terser';
-import concat from 'gulp-concat';
+const gulp = require('gulp');
+const sourcemaps = require('gulp-sourcemaps');
+const terser = require('gulp-terser');
+const concat = require('gulp-concat');
 
 const { src, dest, series } = gulp;
 
@@ -17,4 +17,4 @@ const bundleJS = () =>
     .pipe(sourcemaps.write('./'))
     .pipe(dest('dist'));
 
-export default series(bundleJS);
+module.exports.default = series(bundleJS);

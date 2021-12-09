@@ -1,7 +1,6 @@
 /**
  * Truncates string to fit within given length with appended ellipsis. Option to keep last word.
  */
-
 export const stringTruncate = (
   str: string,
   length: number,
