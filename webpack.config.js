@@ -1,9 +1,19 @@
 const path = require('path');
 
 module.exports = {
-  mode: 'none',
+  mode: 'production',
   devtool: 'source-map',
   entry: './src/index.ts',
+  output: {
+    filename: 'index.min.js',
+    path: path.resolve(__dirname, 'dist'),
+    library: 'stringTruncate',
+    libraryTarget: 'umd',
+    umdNamedDefine: true,
+  },
+  resolve: {
+    extensions: ['.ts', '.js'],
+  },
   module: {
     rules: [
       {
@@ -12,12 +22,5 @@ module.exports = {
         include: [path.resolve(__dirname, 'src')],
       },
     ],
-  },
-  resolve: {
-    extensions: ['.ts', '.js'],
-  },
-  output: {
-    filename: 'index.min.js',
-    path: path.resolve(__dirname, 'dist'),
   },
 };
