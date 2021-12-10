@@ -37,9 +37,6 @@ jobs:
       - name: Build
         run: yarn build
 
-      - name: Bundle
-        run: yarn bundle
-
       - name: Publish
         run: npm publish --access public
         env:

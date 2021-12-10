@@ -1,1 +1,1 @@
-export { stringTruncate } from './string-truncate';
+export { stringTruncate } from './stringTruncate';
